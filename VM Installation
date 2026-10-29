@@ -1,1 +1,44 @@
+VMware Fusion Installation Guide
+This page provides step-by-step instructions for installing VMware Fusion on macOS. It is intended for users who need to set up a local virtual machine environment for this project (e.g., for testing, development, or running a guest OS).
 
+Prerequisites
+Before installing VMware Fusion, verify the following:
+
+Hardware: Any Mac that officially supports macOS 12 Monterey or later (for Fusion 13.x and newer). Apple Silicon and Intel Macs are both supported by the universal installer .
+
+Memory: Minimum 8 GB RAM. 16 GB or more is recommended if you plan to run multiple virtual machines simultaneously .
+
+Disk Space: At least 1.5 GB free for the application, plus at least 5 GB per virtual machine .
+
+Account: A free Broadcom Support Portal account is required to download VMware Fusion. Registration is free and does not require a corporate email .
+
+Guest OS Media: VMware Fusion does not include operating system installers. You must provide your own ISO image (e.g., Windows, Linux) or use macOS recovery .
+
+Download
+Go to the Broadcom Support Portal and sign in (or register for a free account).
+
+Navigate to My Downloads → Free Software Downloads.
+
+Search for VMware Fusion and select the latest version (e.g., Fusion 13.x).
+
+Read and accept the Terms and Conditions. If the download icon remains disabled, refresh the page or try a different browser without network restrictions .
+
+Download the .dmg file. The same installer works for both Intel and Apple Silicon Macs .
+
+Licensing Note: VMware Fusion is free for personal, educational, and commercial use. No license key is required — during installation, select "Use for Personal Use" or leave the license field blank .
+
+Installation Steps
+Open the DMG: Double-click the downloaded VMware-Fusion-*.dmg file to mount it.
+
+Launch the Installer: In the Finder window that appears, double-click the VMware Fusion icon (or drag it to the Applications folder). Installing Fusion 13 will automatically remove any older version of Fusion .
+
+Confirm the Open Warning: If macOS displays "application downloaded from the internet," click Open.
+
+Authenticate: Enter your macOS administrator password when prompted. This is required for the one-time setup of network and system components .
+
+Accept the License Agreement: Review and click Agree to proceed.
+
+Complete Setup: Enter the administrator password again if prompted. The initialization will finish, and VMware Fusion will be installed in /Applications.
+
+Verify Installation
+Launch VMware Fusion from Applications or Spotlight. You should see the Virtual Machine Library window or the Installation Assistant. If the application opens without errors, the installation is complete.
