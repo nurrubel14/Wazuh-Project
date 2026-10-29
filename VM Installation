@@ -4,6 +4,7 @@ This page provides step-by-step instructions for installing VMware Fusion on mac
 Prerequisites
 Before installing VMware Fusion, verify the following:
 
+
 Hardware: Any Mac that officially supports macOS 12 Monterey or later (for Fusion 13.x and newer). Apple Silicon and Intel Macs are both supported by the universal installer .
 
 Memory: Minimum 8 GB RAM. 16 GB or more is recommended if you plan to run multiple virtual machines simultaneously .
