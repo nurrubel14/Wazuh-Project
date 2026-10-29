@@ -1,1 +1,114 @@
+Kali Linux and Ubuntu Download & Installation Guide (VMware Fusion)
+This page covers downloading and installing Kali Linux and Ubuntu as virtual machines in VMware Fusion on macOS. It builds on the base VMware Fusion installation already documented.
 
+Critical First Step: Check Your Mac's Architecture
+Before downloading anything, confirm whether your Mac uses Apple Silicon (M1/M2/M3/M4/M5) or an Intel processor. This determines which ISO image you need:
+
+Apple Silicon Macs require ARM64 (aarch64) images. x86_64 ISOs will not boot.
+
+Intel Macs require x86_64 (amd64) images.
+
+You can check by going to Apple Menu → About This Mac.
+
+Part 1: Kali Linux
+Download Kali Linux
+Go to the official Kali download page: https://www.kali.org/get-kali/.
+
+Select Installer Images (recommended over Live or NetInstaller for a full offline installation).
+
+For Apple Silicon: choose the Apple Silicon (ARM64) installer image.
+
+For Intel: choose the standard 64-bit (amd64) installer image.
+
+Save the .iso file and note its location.
+
+Security Note: Kali strongly recommends verifying your ISO checksum before use. Download the SHA256SUMS file alongside the ISO and compare hashes using shasum -a 256 <filename>.iso in Terminal.
+
+Create the Kali VM in VMware Fusion
+Open VMware Fusion. From the menu bar, select File → New.
+
+Choose Install from disc or image and browse to your downloaded Kali ISO.
+
+VMware Fusion should detect the OS as Debian 12.x 64-bit Arm (Apple Silicon) or Debian 12.x 64-bit (Intel). Click Continue.
+
+Click Customize Settings to adjust resources before finishing:
+
+RAM: At least 4 GB (4096 MB) recommended for Kali with a desktop environment.
+
+CPU: 2 or more cores.
+
+Disk: 20–40 GB is typical, depending on your use case.
+
+Save the VM and click Finish.
+
+Apple Silicon M4+ Note: Some users on M4 and newer Macs have reported the VMware Fusion GUI wizard freezing with the "Continue" button greyed out when creating a Kali VM. If this happens, the VM can be created manually via Terminal using a .vmx configuration file. This workaround is documented but outside the scope of this basic guide.
+
+Install Kali Linux
+Start the VM. The Kali installer boot menu appears. Select Graphical install.
+
+Follow the prompts:
+
+Language: Select your preferred language.
+
+Location: Select your country/timezone.
+
+Keyboard: Choose your layout.
+
+Hostname: A name for the VM (e.g., kali).
+
+User account: Set a username and password.
+
+Disk partitioning: For a simple VM, choose Guided - use entire disk and confirm.
+
+When prompted for software selection, the default selections (Xfce desktop, top10 tools) are appropriate for most users.
+
+Complete the installation and reboot the VM when prompted.
+
+Part 2: Ubuntu
+Download Ubuntu
+Go to the official Ubuntu Desktop download page: https://ubuntu.com/download/desktop.
+
+Choose the architecture that matches your Mac:
+
+Apple Silicon: Click ARM 64-bit architecture and download the ISO.
+
+Intel: Download the standard Intel or AMD 64-bit ISO.
+
+The current LTS release is recommended for stability .
+Save the .iso file.
+
+Verification: Ubuntu also provides SHA256 checksums. It is good practice to verify your download before installing.
+
+Create the Ubuntu VM in VMware Fusion
+Open VMware Fusion and select File → New.
+
+Choose Install from disc or image and select your Ubuntu ISO.
+
+VMware Fusion may detect the OS as Ubuntu 64-bit (or Ubuntu 64-bit Arm on Apple Silicon). If not, select Other Linux 6.x kernel 64-bit as a fallback.
+
+Click Customize Settings:
+
+RAM: 4 GB minimum recommended (8 GB if your Mac has enough memory).
+
+CPU: 2–4 cores.
+
+Disk: 50 GB(as I am running my wazuh manager in ubuntu)
+
+Save and finish.
+
+Install Ubuntu
+Start the VM. The GRUB menu appears; select Try or Install Ubuntu.
+
+Choose your language and keyboard layout.
+
+Network: Select Use wired connection .
+
+Installation type: Choose Interactive installation.
+
+Applications: The Default selection provides essentials (browser, basic utilities). Choose Extended selection if you want office tools.
+
+Disk setup: Select Erase disk and install Ubuntu (this only affects the VM's virtual disk, not your Mac's real disk).
+
+User account: Enter your name, a computer name (hostname), username, and password.
+
+Wait for installation to complete (typically 15–30 minutes) and restart the VM when prompted.
