@@ -1,5 +1,5 @@
 VMware Fusion Installation Guide
-This page provides step-by-step instructions for installing VMware Fusion on macOS. It is intended for users who need to set up a local virtual machine environment for this project (e.g., for testing, development, or running a guest OS).
+This page provides step-by-step instructions for installing VMware Fusion on macOS. I have install VM Fusion for my project.
 
 Prerequisites
 Before installing VMware Fusion, verify the following:
@@ -11,16 +11,14 @@ Memory: Minimum 8 GB RAM. 16 GB or more is recommended if you plan to run multip
 
 Disk Space: At least 1.5 GB free for the application, plus at least 5 GB per virtual machine .
 
-Account: A free Broadcom Support Portal account is required to download VMware Fusion. Registration is free and does not require a corporate email .
-
-Guest OS Media: VMware Fusion does not include operating system installers. You must provide your own ISO image (e.g., Windows, Linux) or use macOS recovery .
 
 Download
 Go to the Broadcom Support Portal and sign in (or register for a free account).
 
+
 Navigate to My Downloads → Free Software Downloads.
 
-Search for VMware Fusion and select the latest version (e.g., Fusion 13.x).
+Search for VMware Fusion and select the latest version (e.g., Fusion 26.Hx).
 
 Read and accept the Terms and Conditions. If the download icon remains disabled, refresh the page or try a different browser without network restrictions .
 
